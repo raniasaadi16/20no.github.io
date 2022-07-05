@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>20 Valores</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg px-4 fw-bold " data-aos="fade-in">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="./img/1.svg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <span class="iconify" data-icon="ant-design:menu-outlined"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 scroll-link">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" data-link="about">Sobre
+                    nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-link="reviews">Testemunhos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-link="pricing">Preço</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-link="faqs">FAQs</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-primary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Disciplinas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Matemática A</a></li>
+                  <li><a class="dropdown-item" href="#">Português</a></li>
+                  <li><a class="dropdown-item" href="#">Biologia e Geologia</a></li>
+                  <li><a class="dropdown-item" href="#">Física e Química A</a></li>
+                  <li><a class="dropdown-item" href="#">Economia A</a></li>
+                  <li><a class="dropdown-item" href="#">Geografia A</a></li>
+                  <li><a class="dropdown-item" href="#">Geometria Descritiva A</a></li>
+                  <li><a class="dropdown-item" href="#">História A</a></li>
+
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn bg-primary text-white px-4" type="submit">Entrar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!--header-->
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end position-absolute header-container" data-aos="fade-up">
+                <div class="text-box" >
+                    <h1 class="title">Pratica. Aprende. 20 no Exame.</h1>
+                    <h4 class="mt-3 text-white fw-semibold mb-0">Aprende e pratica ao teu ritmo. Garante já o teu sucesso nos exames nacionais</h4>
+                </div>
+                <button class="btn text-white bg-primary px-4 py-2 fw-semibold" data-link="tutorial" id="tutorialLink">Tutorial</button>
+            </div>
+        </div>
+    </header>
+
+    <!--about-->
+    <section class="container mt-5 about" id="about">
+        <div class="title1" data-aos="fade-in">
+            <div class="d-flex justify-content-center align-items-center fw-semibold title-xs">
+                <div class="me-4 position-relative">
+                    <svg viewBox="0 0 70 70">
+                        <circle class="outer" cx="35" cy="35" r="32" />
+                        <circle class="inner" cx="35" cy="35" r="24" />
+                      </svg>
+                    <h4 class="num">95%</h4>
+                </div>
+                <h4>dos clientes do <span class="text-primary">20 no Exame</span> dizem ter melhorado o seu rácio de perguntas certas e rapidez de resposta</h4>
+            </div>
+        </div>
+
+        <!--row1-->
+        <div class="mt-6 px-lg-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12 col-md-6 text-center" data-aos="fade-right">
+                    <h4 class="fw-semibold">Aprende com cada pergunta</h4>
+                    <p class="mt-3">
+                        As explicações do 20 no Exame permitem-te aprender mesmo quando acertas a resposta! Todas as explicações foram verificadas por professors da respetiva área.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-6" data-aos="fade-left">
+                    <img src="./img/javier-trueba-iQPr1XkF5F0-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--row2-->
+        <div class="mt-5 px-lg-5">
+            <div class="row align-items-center reverse-sm">
+                <div class="col-lg-6 col-sm-12 col-md-6"  data-aos="fade-right">
+                    <img src="./img/green-chameleon-s9CC2SKySJM-unsplash.jpg" alt="">
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-6 text-center" data-aos="fade-left">
+                    <h4 class="fw-semibold">Faz resumos ao teu gosto</h4>
+                    <p class="mt-3">
+                        Cria os teus próprios resumos ou acede aos nossos (a serem disponibilizados brevemente). Podes consultar os teus apontamentos antes, durante, ou depois de cada teste, conforme se adequar ao teu método de estudo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--row3-->
+        <div class="mt-5 px-lg-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12 col-md-6 text-center" data-aos="fade-right">
+                    <h4 class="fw-semibold">Estuda ao teu ritmo</h4>
+                    <p class="mt-3">
+                        Escolhe o número de perguntas a que queres responder, continua os testes mais tarde, revê as respostas erradas. A qualquer hora do dia; ao teu ritmo.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-6" data-aos="fade-left">
+                    <img src="./img/jeshoots-com--2vD8lIhdnw-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--reviews-->
+    <section class="container mt-5 reviews bg-secondary rounded px-3 py-2" id="reviews">
+        <div class="row align-items-center">
+            <div class="col-lg-5" data-aos="fade-right">
+                <img src="./img/testiminials.svg" alt="">
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="ms-4">
+                    <h2 class="fw-semibold title2">Avaliações dos alunos</h2>
+                    <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <!--review1-->
+                          <div class="carousel-item active">
+                            <div class="single-review">
+                                <p>
+                                    Sempre que errava uma pergunta sentia me frustrado; agora vejo os erros como uma oportunidade para aprender. As explicações do 20 no Exame são muito boas.
+                                </p>
+                                <p class="text-primary">- João, Santarém</p>
+                            </div>
+                          <!--review2-->
+                          </div>
+                          <div class="carousel-item">
+                            <div class="single-review">
+                                <p>
+                                    A plataforma do 20 no Exame é muito intuitiva e é muito bom poder fazer os meus próprios resumos com os conceitos que quero rever mais tarde!
+                                </p>
+                                <p class="text-primary">- Mariana, Porto</p>
+                            </div>
+                          </div>
+                          <!--review3-->
+                          <div class="carousel-item">
+                            <div class="single-review">
+                                <p>
+                                    É ótimo poder escolher os temas que quero praticar, em vez de fazer exames com temas misturados! Assim posso ir testando o meu conhecimento ao longo do ano, conforme vou aprendendo a matéria.
+                                </p>
+                                <p class="text-primary">- Rita, Lisboa</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="arr prev carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="arr next carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--pricing-->
+    <section class="container mt-5 pricing" id="pricing">
+        <h3 class="fw-semibold text-center"><span class="text-primary">P</span>reços</h3>
+        <div class="px-lg-5" data-aos="fade-up">
+            <div class="row mt-4">
+                <!--BASIC-->
+                <div class="col-lg-4 col-md-4 my-1">
+                    <div class="price-border rounded px-4 py-4">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="icon rounded bg-primary px-2 text-secondary me-2 d-flex justify-content-center align-items-center px-2 py-2">
+                                <span class="iconify" data-icon="carbon:send-alt-filled" style="font-size: 17px"></span>
+                            </div>
+                            <h5 class="fw-semibold mb-0">Focado</h5>
+                        </div>
+                        <div class="my-4 text-center">
+                            <h4 class="text-primary">1 disciplina</h4>
+                        </div>
+                        <div class="prices fw-bold d-flex align-items-center justify-content-center">
+                            <h3 class="me-2 old-price">50€</h3>
+                            <h2>20€</h2>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn bg-secondary text-primary fw-semibold mx-auto d-block">Selecionar</button>
+                        </div>
+                    </div>
+                </div>
+                <!--STANDARD-->
+                <div class="col-lg-4 col-md-4 my-1">
+                    <div class="price-border rounded px-4 py-4">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="icon rounded bg-primary px-2 text-secondary me-2 d-flex justify-content-center align-items-center px-2 py-2">
+                                <span class="iconify" data-icon="fa6-solid:plane" style="font-size: 17px"></span>
+                            </div>
+                            <h5 class="fw-semibold mb-0">Normal</h5>
+                        </div>
+                        <div class="my-4 text-center">
+                            <h4 class="text-primary">2 disciplinas</h4>
+                        </div>
+                        <div class="prices fw-bold d-flex align-items-center justify-content-center">
+                            <h3 class="me-2 old-price">90€</h3>
+                            <h2>35€</h2>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn bg-secondary text-primary fw-semibold mx-auto d-block">Selecionar</button>
+                        </div>
+                    </div>
+                </div>
+                <!--PREMIUM-->
+                <div class="col-lg-4 col-md-4 my-1">
+                    <div class="price-border rounded px-4 py-4">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="icon rounded bg-primary px-2 text-secondary me-2 d-flex justify-content-center align-items-center px-2 py-2">
+                                <span class="iconify" data-icon="mdi:rocket-launch" style="font-size: 17px"></span>
+                            </div>
+                            <h5 class="fw-semibold mb-0">Génio</h5>
+                        </div>
+                        <div class="my-4 text-center">
+                            <h4 class="text-primary">+3 disciplinas</h4>
+                        </div>
+                        <div class="prices fw-bold d-flex align-items-center justify-content-center">
+                            <h3 class="me-2 old-price">120€</h3>
+                            <h2>50€</h2>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn bg-secondary text-primary fw-semibold mx-auto d-block">Selecionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2">
+                <p>* Os pacotes são válidos até à data do Exame Nacional da respetiva disciplina</p>
+            </div>
+        </div>
+    </section>
+
+    <!--video-->
+    <section class="video bg-secondary py-5 mt-5" data-aos="fade-in">
+        <div class="container">
+            <div class="px-lg-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="img-box">
+                            <img src="./img/toppng.com-laptop-mockup-placeholder-selling-global-on-amazo-826x468.png" alt="">
+                            <!--video-->
+                            <video id="tutorial" class="video-js vjs-theme-forest" controls preload="auto" width="640" height="264" 
+                            poster="....."
+                            data-setup="{}">
+                            <source src="videos/Pexels Videos 2268807.mp4" type="video/mp4" />
+                            </video> 
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <h3 class="fw-semibold">Do que estás à espera para garantir o teu sucesso nos exames nacionais?</h3>
+                        <a class="mt-3 text-secondary bg-primary px-4 py-2 btn" href="#">Experimenta um teste gratis.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------faqs---------------------------->
+    <section class="fq container mt-5" id="faqs" data-aos="fade-in">
+        <div class="content2 px-lg-5">
+            <div class="accordion" id="accordionExample">
+                <!--q1-->
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Porque devo escolher o 20 no Exame para me preparar para os exames
+                        nacionais?
+                    </button>
+                </h2>
+                <!--a1-->
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Praticar é fundamental na preparação dos exames nacionais. O 20 no Exame é uma plataforma de questões em português segundo os critérios do IAVE, formatados com a estrutura da PNA e que incluem a explicação pedagógica dos conteúdos teóricos abordados. O Qb é a ferramenta ideal para garantires o teu sucesso na PNA!
+                    </div>
+                </div>
+                </div>
+                <!--q2-->
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                    </button>
+                </h2>
+                <!--a2-->
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.
+                    </div>
+                </div>
+                </div>
+                <!--q3-->
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                    </button>
+                </h2>
+                <!--a3-->
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.
+                    </div>
+                </div>
+                </div>
+                <!--q4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Accordion Item #4
+                    </button>
+                    </h2>
+                    <!--a4-->
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.
+                    </div>
+                    </div>
+                </div>
+                <!--q5-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        Accordion Item #5
+                    </button>
+                    </h2>
+                    <!--a5-->
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.
+                    </div>
+                    </div>
+                </div>
+                <!--q6-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        Accordion Item #6
+                    </button>
+                    </h2>
+                    <!--a6-->
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.
+                    </div>
+                    </div>
+                </div>
+                <!--q7-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        Accordion Item #7
+                    </button>
+                    </h2>
+                    <!--a7-->
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.
+                    </div>
+                    </div>
+                </div>
+                <!--q8-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        Accordion Item #8
+                    </button>
+                    </h2>
+                    <!--a8-->
+                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the accordion-body, though the transition does limit overflow.
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--last section-->
+    <section class="container mt-5 mycards">
+        <div class="row text-white text-center">
+            <div class="col-lg-6 col-md-6 my-1" data-aos="fade-right">
+                <div class="card1 rounded px-3 py-4" style="height: 100%;">
+                    <div>
+                        <h3>Novo no 20 no Exame?</h3>
+                        <p>Bem-vind@! Experimenta a nossa plataforma.</p>
+                        <a href="" class="btn bg-secondary text-primary py-2 px-4">Teste Grátis</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 my-1" data-aos="fade-left">
+                <div class="card1 card2 rounded px-3 py-4">
+                    <div>
+                        <h3>Fala connosco</h3>
+                        <p>Se ainda tiveres questões, não hesites em contactar!</p>
+                        <a href="mailto:geral@20noexame.pt" class="btn bg-secondary text-primary py-2 px-4">geral@20noexame.pt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="mt-5 text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="desc">
+                        <img src="img/5.svg" class="logo rounded" alt="">
+                        <p class="mt-3">@Copyright 2022. 20 no Exame. Todos os direiros reservados
+                        </p>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="links scroll-link">
+                        <ul>
+                            <li><a data-link="about">Sobre Nós</a></li>
+                            <li><a href="#">Recursos</a></li>
+                            <li><a data-link="reviews">Testemunhos</a></li>
+                            <li><a data-link="pricing">Preço</a></li>
+                            <li><a data-link="faqs">FAQs</a></li>
+                            <li><a href="#">Disciplinas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="contact">
+                        <ul>
+                          <li>
+                            <a href="">
+                             <span class="iconify" data-inline="false" data-icon="akar-icons:facebook-fill" style="color: var(--primary-color); font-size: 35px;"></span>
+                             Facebook
+                            </a>
+                          </li>
+                   
+                          <li class="my-4">
+                            <a href="">
+                             <span class="iconify" data-inline="false" data-icon="bx:bxl-instagram-alt" style="color: var(--primary-color); font-size: 35px;"></span>
+                             Instagram
+                            </a>
+                          </li>
+                   
+                          <li>
+                            <a href="mailto:geral@qb.pt">
+                             <span class="iconify" data-inline="false" data-icon="ic:baseline-email" style="color: var(--primary-color); font-size: 35px;"></span>
+                             Email
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+     
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500
+      });
+    </script>
+</body>
+</html>

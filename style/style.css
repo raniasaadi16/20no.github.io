@@ -1,0 +1,392 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'hurme-bold';
+    src: url('../fonts/HurmeGeometricSans1\ Bold.otf');
+}
+@font-face {
+    font-family: 'hurme-semibold';
+    src: url('../fonts/HurmeGeometricSans1\ SemiBold.otf');
+}
+@font-face {
+    font-family: 'hurme';
+    src: url('../fonts/HurmeGeometricSans1.otf');
+}
+:root{
+    --primary-color: #E88A24;
+    --secondary-color: #FBEEDC;
+    --text-primary: #4F4F4F
+}
+body{
+    height: 100%;
+}
+html{
+    height: 100%;
+    overflow: auto;
+}
+body,a{
+    color: var(--text-primary) !important;
+    font-family:'hurme'
+}
+.fw-semibold{
+    font-family: 'hurme-semibold' !important;
+}
+.fw-bold{
+    font-family: 'hurme-bold' !important;
+}
+.btn-primary{
+    background: var(--primary-color);
+    border: 0;
+}
+.bg-primary{
+    background: var(--primary-color) !important;
+}
+.text-primary{
+    color: var(--primary-color) !important;
+}
+.text-white{
+    color: white !important;
+}
+.bg-secondary{
+    background: var(--secondary-color) !important;
+}
+.text-secondary{
+    color: var(--secondary-color) !important;
+}
+.bg-dark{
+    background: var(--text-primary) !important;
+}
+.mt-6{
+    margin-top: 100px;
+}
+
+.navbar{
+    font-family: 'hurme';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 200;
+}
+.navbar-brand img{
+    width: 75px;
+}
+.navbar button{
+    font-family: 'hurme-semibold' ;
+}
+.navbar a{
+    cursor: pointer;
+}
+
+header{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.09)), url('../img/eliott-reyna-kcT-7cirBEw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 77px);
+    margin-top: 82px;
+}
+header .header-container{
+    bottom: 30px;
+}
+header .text-box{
+    width: 70%;
+}
+header .title{
+    color: var(--primary-color);
+    font-family: 'hurme-bold';
+    font-size: 54px;
+}
+header button{
+    transition: 0.4s ease-out;
+}
+header .btn:hover{
+    background: var(--text-primary) !important;
+    color: #fff !important;
+}
+
+.title1{
+    width: 90%;
+    margin: auto;
+}
+.title1 .num{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.about .row img{
+    height: 350px;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+.about svg {
+    height: 100px;
+    width: 100px;
+} 
+circle {
+fill: none;
+stroke: var(--primary-color);
+stroke-width: 6;
+stroke-dasharray: 0, 1000;
+stroke-dashoffset: -100;
+stroke-linecap: round;
+transform-origin: 50%;
+animation-name: draw;
+/*   animation-direction: alternate; */
+animation-duration: 2.2s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.inner {
+stroke: var(--primary-color);
+stroke-dashoffset: -79.398px;
+/*   stroke-width: 0; */
+animation-name: draw-inner;
+transform: rotate(90deg);
+}
+.outer {
+transform: rotate(-90deg);
+} 
+@keyframes draw {
+to {
+    stroke-dasharray: 200, 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+}
+}
+@keyframes draw-inner {
+to {
+    stroke-dasharray: 150.796px, 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+}
+}
+
+.reviews-area{
+    overflow: hidden;
+}
+.reviews-container{
+    display: flex;
+}
+.reviews .title2{
+    max-width: 250px;
+}
+.reviews p{
+    font-size: 18px;
+}
+.reviews img{
+    width: 100%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.reviews button{
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: var(--text-primary);
+    padding: 15px 20px;
+}
+.reviews button{
+    margin-top: 20px;
+    width: 60px;
+    background: transparent;
+}
+
+.pricing .icon{
+    width: max-content;
+}
+.pricing .old-price{
+    color: #DBDBDB;
+    text-decoration: line-through;
+}
+.pricing .price-border{
+    border: 2px solid #DBDBDB;
+}
+.pricing button{
+    font-size: 18px;
+}
+
+
+.video img{
+    width: 91%;
+    position: relative;
+    left: 10px;
+}
+.video .img-box{
+    position: relative;
+}
+.video img{
+    position: relative;
+    z-index: 10;
+}
+.video .img-box::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+.video .video-js{
+    width: 66%;
+    top: 4%;
+    position: absolute;
+    z-index: 100;
+    height: 78.7%;
+    left: 14%;
+}
+.vjs-theme-forest {
+    --vjs-theme-forest--primary: var(--primary-color);
+}
+.vjs-theme-forest.vjs-big-play-button:focus, .vjs-theme-forest:hover .vjs-big-play-button{
+    background: transparent !important;
+}
+
+.fq .content2 .accordion{
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+.fq .accordion-button{
+    border: 1px solid var(--primary-color);
+    background: transparent !important;
+    color: inherit !important;
+    box-shadow: none !important;
+}
+
+section{
+    overflow: hidden;
+}
+.mycards .card1{
+    background: var(--primary-color);
+    font-size: 24px
+}
+.mycards .card1 h3{
+    font-weight: 700;
+}
+.mycards .card1 p{
+    margin: 25px 0;
+}
+.mycards .card1 a{
+    font-size: 20px;
+    width: max-content;
+    margin: auto;
+    transition: 0.3s ease;
+}
+.mycards .card1 a:hover{
+    background-color: var(--text-primary) !important;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+footer{
+    background: var(--text-primary);
+}
+footer a{
+    text-decoration: none !important;
+}
+footer .links,
+footer .links h3,
+footer .links ul,
+footer .contact ul{
+margin-right: 0;
+padding-left: 5px;
+}
+footer .links ul li,
+footer .contact ul li{
+    margin: 10px 0;
+    color: var(--primary-color);
+}
+footer .links ul li a,
+footer .contact ul li a{
+    color: #fff !important;
+    cursor: pointer;
+}
+footer .contact ul{
+    list-style: none;
+    padding: 0;
+}
+footer .contact ul li svg{
+    margin-right: 35px;
+}
+footer .logo{
+    width: 110px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .video .img-box::after{
+        width: 235px;
+        height: 222px;
+    }
+}
+@media screen and (max-width: 992px) {
+    header .d-flex{
+        display: block !important;
+    }
+    header button{
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .video .img-box::after{
+        width: 194px;
+        height: 171px;
+    }
+    .video .video-js{
+        left: 15%;
+    }
+}
+@media screen and (max-width: 768px) {
+    header h1{
+        font-size: 40px !important;
+    }
+    .reverse-sm{
+        flex-wrap: wrap-reverse;
+    }
+    .mt-6{
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 576px) {
+    header .text-box{
+        width: 100%;
+    }
+   .title-xs{
+       text-align: center;
+       flex-wrap: wrap;
+   }
+}
+@media screen and (max-width: 500px) {
+    .video .img-box::after {
+        width: 200px;
+        height: 200px;
+    }
+    .video .video-js{
+        left: 15%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .video .img-box::after {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+
+
+
+
+
+
+
+
